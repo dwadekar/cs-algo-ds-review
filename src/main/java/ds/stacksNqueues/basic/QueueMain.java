@@ -2,7 +2,7 @@ package ds.stacksNqueues.basic;
 
 public class QueueMain {
     public static void main(String[] args) {
-        Queue<Integer> queue = new Queue<Integer>(5);
+        Queue<Integer> queue = new Queue<>(5);
         //enqueue 2 4 6 8 10 at the end
         queue.enqueue(2);
         queue.enqueue(4);
