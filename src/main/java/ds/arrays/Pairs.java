@@ -59,11 +59,11 @@ public class Pairs {
     private static Pair<Integer, Integer> findPair(int[] arr, int targetSum) {
         Set<Integer> integerSet = new HashSet<>();
 
-        for(int i = 0; i < arr.length; i++) {
-            if(integerSet.contains(targetSum - arr[i])) {
-                return new Pair<>(arr[i], (targetSum - arr[i]));
+        for (int j : arr) {
+            if (integerSet.contains(targetSum - j)) {
+                return new Pair<>(j, (targetSum - j));
             }
-            integerSet.add(arr[i]);
+            integerSet.add(j);
         }
 
         return null;
